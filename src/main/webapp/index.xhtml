@@ -8,7 +8,17 @@
 </h:head>
 <h:body>
     <h:form>
-         <p:commandButton value="Chamar Bean" action="#{denunciaMB.chamar()}"></p:commandButton>
+    	Nome: <h:inputText value="#{agenteMB.agente.nome}" />
+    	<br />
+    	Data de Contrato: <h:inputText value="#{agenteMB.agente.dtContratacao}" />
+    	<br />
+    	Tempo de Serviço: <h:inputText value="#{agenteMB.agente.tempoServico}" />
+    
+    	<br />
+    	
+    	<p:commandButton value="AgenteBean" action="#{agenteMB.inserir()}"></p:commandButton>
+
+<!--         <p:commandButton value="Chamar Bean" action="#{denunciaMB.chamar()}"></p:commandButton> -->
     </h:form>
 </h:body>
 </html>
